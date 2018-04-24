@@ -6,7 +6,6 @@
 .btn-secondary:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
   border: .05rem solid #fff;
 }
 
@@ -18,7 +17,7 @@
 html,
 body {
   height: 100%;
-  background-color: #333;
+  
 }
 
 body {
@@ -28,7 +27,18 @@ body {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   justify-content: center;
+  background-color:rgba(0, 123, 255, 0.5)!important;
+  color: #fff!important;
 }
+
+a{
+  color:#fff!important;
+}
+
+a .fa:hover{
+  color:yellow;
+}
+
 
 .fa{
     margin: 0 20px 0 0;
@@ -42,6 +52,19 @@ body {
 /*
  * Header
  */
+
+.dropdown-item {
+  color:black!important;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: rgb(246, 255, 0, 0.5)!important;
+}
+
+.cover-container{
+  height: 100%!important;
+}
+
 .masthead {
   margin-bottom: 2rem;
 }
@@ -60,7 +83,7 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: yellow;
 }
 
 .nav-masthead .nav-link + .nav-link {
