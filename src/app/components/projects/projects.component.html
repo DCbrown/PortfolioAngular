@@ -1,4 +1,4 @@
-<body class="text-center">
+
    <!--
     <ul *ngFor="let project of projects">
         <li>{{project.title}}</li>
@@ -8,13 +8,28 @@
           <li><img src="{{project.img}}"></li>  
         </ul>
     -->
-  <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+  <div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
   
     <app-navbar></app-navbar>
-    <br/>
+    
     <br/>
     <div class="container">
-      <div class="row text-center text-lg-left">
+    <div id="subjectButtons">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-light active">
+              <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+            </label>
+            <label class="btn btn-light">
+              <input type="radio" name="options" id="option2" autocomplete="off"> Web  
+            </label>
+            <label class="btn btn-light">
+              <input type="radio" name="options" id="option3" autocomplete="off"> Moblie 
+            </label>
+          </div>
+        </div>
+      <br/>
+      <br/>
+      <div class="scroll row text-center text-lg-left">
         <!--
         <div class="col-lg-4 col-md-4 col-xs-6">
           <a href="#" class="d-block mb-4 h-100">
@@ -23,12 +38,20 @@
           img-fluid img-thumbnail
         </div>
         -->
+        
         <ul *ngFor="let project of projects">
-            <li class="inline"><img class="grow img-fluid img-thumbnail"src="{{project.img}}"></li>
+            <li class="inline">
+              <img class="grow img-fluid img-thumbnail"src="{{project.img}}">
+              <b class="text"><p>{{project.title}}</p></b>
+              <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-globe" aria-hidden="true"></i> Live</button>
+              <button type="button" class="btn btn-info btn-sm"><i class="fa fa-github" aria-hidden="true"></i> GitHub</button>
+            </li>
         </ul>
       </div>
     </div>
 
+    
+    
 
     <footer class="mt-auto">
       <div class="inner">
@@ -36,4 +59,4 @@
       </div>
     </footer>
   </div>
-  </body>
+ 

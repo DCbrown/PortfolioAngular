@@ -40,7 +40,7 @@ a .fa:hover{
 }
 
 
-.fa{
+.le{
     margin: 0 20px 0 0;
 }
 
@@ -94,6 +94,39 @@ a .fa:hover{
   color: #000;
   border-bottom-color: #fff;
 }
+
+.cover-container{
+  background-color: rgba(0, 123, 255, 0.5)!important;
+}
+
+.scroll{
+  overflow: scroll;
+  height: 450px;
+}
+
+.btn{
+  border: 2px solid #fff!important;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background: #fff;  
+  border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #fffa1c;  
+  }
 
 @media (min-width: 48em) {
   .masthead-brand {
