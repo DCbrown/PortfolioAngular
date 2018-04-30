@@ -96,7 +96,9 @@ a .fa:hover{
 }
 
 .cover-container{
-  background-color: rgba(0, 123, 255, 0.5)!important;
+  background-image: url('assets/img/blue_donovan.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .scroll{

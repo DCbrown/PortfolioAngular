@@ -1,0 +1,60 @@
+<div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
+  
+  <app-navbar></app-navbar>
+  <br/>
+ 
+  <main role="main" id="margin-top" class="inner cover">
+    <div class="form-area"> 
+      <form role="form">
+        <br style="clear:both">
+        <h3 class="cover-heading"><u style="text-decoration-line: underline; text-decoration-color: yellow;">Contact Donovan</u></h3>
+        <br/>
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name" [(ngModel)]="name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" name="email" placeholder="Email" [(ngModel)]="email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" [(ngModel)]="subject" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" [(ngModel)]="message" rows="7"></textarea>              
+        </div>
+        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right" (click)="save(name, email, mobile, subject, message)">Send</button>
+      </form>
+    </div>
+   
+  </main>
+
+
+  <footer class="mt-auto">
+    <div class="inner">
+      <p>© 2018 Donovan C. Brown, Powered by Angular.</p>
+    </div>
+  </footer>
+</div>
+
+<!--
+<div class="container">
+  <div class="form-area"> 
+    <form role="form">
+      <br style="clear:both">
+      <h3 style="margin-bottom: 25px; text-align: center;">Contact Form</h3>
+      <div class="form-group">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" [(ngModel)]="name" required>
+      </div>
+      <div class="form-group">
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" [(ngModel)]="email" required>
+      </div>
+      <div class="form-group">
+              <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" [(ngModel)]="subject" required>
+      </div>
+      <div class="form-group">
+              <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Message" [(ngModel)]="message" maxlength="140" rows="7"></textarea>              
+      </div>
+      <button type="button" id="submit" name="submit" class="btn btn-primary pull-right" (click)="save(name, email, mobile, subject, message)">Submit Form</button>
+    </form>
+  </div>
+</div>
+-->
