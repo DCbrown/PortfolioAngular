@@ -4,7 +4,7 @@ export class Projects {
     img:string;
     description:string;
     subject:string;
-    liveLink:string;
-    gitHubLink:string;
-  }
+    liveLink:any;
+    gitHubLink:any;
+}
   

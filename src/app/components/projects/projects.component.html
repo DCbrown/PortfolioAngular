@@ -14,19 +14,6 @@
     
     <br/>
     <div class="container">
-    <div id="subjectButtons">
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-light active">
-              <input type="radio" name="options" id="option1" autocomplete="off" checked> All
-            </label>
-            <label class="btn btn-light">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Web  
-            </label>
-            <label class="btn btn-light">
-              <input type="radio" name="options" id="option3" autocomplete="off"> Moblie 
-            </label>
-          </div>
-        </div>
       <br/>
       <br/>
       <div class="scroll row text-center text-lg-left">
@@ -43,8 +30,8 @@
             <li class="inline">
               <img class="grow img-fluid img-thumbnail"src="{{project.img}}">
               <b class="text"><p>{{project.title}}</p></b>
-              <button type="button" class="btn btn-primary btn-sm"><i class="fa fa-globe" aria-hidden="true"></i> Live</button>
-              <button type="button" class="btn btn-info btn-sm"><i class="fa fa-github" aria-hidden="true"></i> GitHub</button>
+              <a href="{{project.liveLink}}" target="_blank"><button *ngIf="project.liveLink" type="button" class="btn btn-primary btn-sm"><i class="fa fa-globe" aria-hidden="true"></i> Live</button></a>
+              <a href="{{project.gitHubLink}}" target="_blank"><button *ngIf="project.gitHubLink" type="button" class="btn btn-info btn-sm"><i class="fa fa-github" aria-hidden="true"></i> GitHub</button></a>
             </li>
         </ul>
       </div>

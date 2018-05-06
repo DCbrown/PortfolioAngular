@@ -4,6 +4,6 @@ export interface Post {
     img:string,
     description:string,
     subject:string,
-    liveLink:string,
-    gitHubLink:string
+    liveLink:any,
+    gitHubLink:any
 }

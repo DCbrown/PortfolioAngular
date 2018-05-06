@@ -12,6 +12,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 
 
 
@@ -24,6 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     ProjectsComponent,
     ProjectComponent,
     ContactComponent,
+    TestimonialsComponent,
   ],
   imports: [
     BrowserModule,

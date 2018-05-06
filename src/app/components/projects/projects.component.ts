@@ -17,8 +17,7 @@ export class ProjectsComponent implements OnInit {
   sub:any;
 
   constructor(private dataService: DataService, private router: Router) { }
-
-
+  
   ngOnInit() {
     this.projects = this.dataService.getProjects();
     

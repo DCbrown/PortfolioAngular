@@ -1,0 +1,23 @@
+    <div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
+  
+      <app-navbar></app-navbar>
+      <br/>
+      <br/>
+      <div class="container">
+        <div class="scroll row text-center">
+          <div *ngFor="let testimonial of testimonials">
+              <img class="img-fluid img-thumbnail"src="{{testimonial.img}}" height="155" width="142">
+              <p><i>"{{testimonial.qoute}}"</i></p>
+              <p class="yellowTxt"><b>{{testimonial.name}}</b></p>
+              <p class="text">{{testimonial.company}}</p>
+              <hr>
+          </div>
+        </div>
+      </div>
+  
+      <footer class="mt-auto">
+        <div class="inner">
+          <p>© 2018 Donovan C. Brown, Powered by Angular.</p>
+        </div>
+      </footer>
+    </div>
