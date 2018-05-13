@@ -1,0 +1,33 @@
+<div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
+  
+    <app-navbar></app-navbar>
+    
+    <br/>
+    <div class="container">
+        <h3 class="cover-heading"><u style="text-decoration-line: underline; text-decoration-color: yellow;">Favorite People</u></h3>
+      <br/>
+      <br/>
+      <div class="scroll row text-center text-lg-left">
+        <ul *ngFor="let peoples of people">
+            <li class="inline">
+              <img class="grow img-fluid img-thumbnail"src="{{peoples.img}}">
+              <b class="text"><u style="text-decoration-line: underline; text-decoration-color: yellow;"><p>{{peoples.name}}</p></u></b>
+              <a *ngIf="peoples.website" href="{{peoples.website}}" target="_blank"><i class="fa fa-globe fa-2x" aria-hidden="true"></i></a>
+              <a *ngIf="peoples.twitter" href="{{peoples.twitter}}" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+              <a *ngIf="peoples.youtube" href="{{peoples.youtube}}" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+              <a *ngIf="peoples.instagram" href="{{peoples.instagram}}" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    
+    
+
+    <footer class="mt-auto">
+      <div class="inner">
+        <p>© 2018 Donovan C. Brown, Powered by Angular.</p>
+      </div>
+    </footer>
+  </div>
+ 

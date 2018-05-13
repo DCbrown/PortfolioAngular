@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Projects } from '../models/Projects';
 import { Testimonials } from '../models/Testimonials';
+import { People } from '../models/People';
+import { Courses } from '../models/Courses';
+import { Tools } from '../models/Tools';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { Post } from '../models/Project';
@@ -9,7 +12,10 @@ import { Post } from '../models/Project';
 export class DataService {
 
   projects: Projects[];
-  testimonials: Testimonials[]; 
+  testimonials: Testimonials[];
+  people: People[];
+  courses: Courses[];
+  tools:Tools[];
 
   showProjects = [];
 
@@ -120,6 +126,99 @@ export class DataService {
         company:'Deputy Director of Your Center and Creative Coordinator of the KISS@ project'
       },
     ]
+
+    this.people = [
+      {
+        id:1,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Kyle Prinsloo',
+        website:'https://studywebdevelopment.com',
+        twitter:'https://twitter.com/study_web_dev',
+        youtube:'https://www.youtube.com/kyleprinsloo?sub_confirmation=1',
+        instagram:'https://www.instagram.com/studywebdevelopment/',
+      },
+      {
+        id:2,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Laurence Bradford',
+        website:'https://learntocodewith.me/',
+        twitter:'https://twitter.com/learncodewithme',
+        youtube:'',
+        instagram:'',
+      },
+      {
+        id:3,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Coding Commanders',
+        website:'http://www.codingcommanders.com/',
+        twitter:'https://twitter.com/codingCommander',
+        youtube:'https://www.instagram.com/codingcommanders/',
+        instagram:'https://www.youtube.com/channel/UC-gCUMK_EGUqJ7P9VA7BJmQ',
+      },
+      {
+        id:4,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Real Tough Candy',
+        website:'https://realtoughcandy.github.io/Portfolio/',
+        twitter:'https://twitter.com/realtoughcandy',
+        youtube:'https://www.youtube.com/channel/UC54NcJvLCvM2CNaBjd5j6HA',
+        instagram:'',
+      },
+      {
+        id:5,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Chris Sean',
+        website:'',
+        twitter:'https://twitter.com/RealChrisSean',
+        youtube:'https://www.youtube.com/channel/UCu1xbgCV5o48h_BYCQD7KJg/videos',
+        instagram:'https://www.instagram.com/RealChrisSean/',
+      },
+      {
+        id:6,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Coding Phase',
+        website:'http://www.codingphase.com/',
+        twitter:'https://twitter.com/codingphase',
+        youtube:'https://www.youtube.com/CodingPhase',
+        instagram:'https://www.instagram.com/codingphase/',
+      },
+      {
+        id:7,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Traversy Media',
+        website:'https://www.traversymedia.com/',
+        twitter:'http://www.twitter.com/traversymedia',
+        youtube:'https://www.youtube.com/user/TechGuyWeb',
+        instagram:'http://www.instagram.com/traversymedia',
+      },
+      {
+        id:8,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Aaron in Beta',
+        website:'',
+        twitter:'https://twitter.com/937aaron',
+        youtube:'https://www.youtube.com/channel/UCXym52jGe7cb5deJRWM3paw',
+        instagram:'https://www.instagram.com/937aaron/',
+      },
+      {
+        id:9,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Stefan Mischook',
+        website:'https://www.killersites.com/',
+        twitter:'https://twitter.com/killersites',
+        youtube:'https://www.youtube.com/user/killerphp',
+        instagram:'https://www.instagram.com/stefanmischook/?hl=en',
+      },
+      {
+        id:10,
+        img:'../../assets/people/kyle-prinsloo.jpg',
+        name:'Coding Connections',
+        website:'',
+        twitter:'https://twitter.com/CodingConnectio',
+        youtube:'https://t.co/PIYRJmsA02',
+        instagram:'',
+      },
+    ]
   }
 
   getProjects(): Projects[]{
@@ -128,6 +227,10 @@ export class DataService {
 
   getTestimonials(): Testimonials[]{
     return this.testimonials;
+  }
+
+  getPeople(): People[]{
+    return this.people;
   }
 
 }

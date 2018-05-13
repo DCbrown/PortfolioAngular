@@ -13,6 +13,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { PeopleComponent } from './components/people/people.component';
 
 
 
@@ -26,6 +27,7 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
     ProjectComponent,
     ContactComponent,
     TestimonialsComponent,
+    PeopleComponent,
   ],
   imports: [
     BrowserModule,

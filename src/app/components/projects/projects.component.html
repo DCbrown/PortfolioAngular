@@ -1,31 +1,13 @@
-
-   <!--
-    <ul *ngFor="let project of projects">
-        <li>{{project.title}}</li>
-        <li>{{project.subject}}</li>
-    </ul>
-     <ul *ngFor="let project of projects">
-          <li><img src="{{project.img}}"></li>  
-        </ul>
-    -->
-  <div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
+<div class="text-center cover-container d-flex h-100 p-3 mx-auto flex-column">
   
     <app-navbar></app-navbar>
     
     <br/>
     <div class="container">
+        <h3 class="cover-heading"><u style="text-decoration-line: underline; text-decoration-color: yellow;">Projects</u></h3>
       <br/>
       <br/>
       <div class="scroll row text-center text-lg-left">
-        <!--
-        <div class="col-lg-4 col-md-4 col-xs-6">
-          <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="{{project.img}}" alt="">
-          </a>
-          img-fluid img-thumbnail
-        </div>
-        -->
-        
         <ul *ngFor="let project of projects">
             <li class="inline">
               <img class="grow img-fluid img-thumbnail"src="{{project.img}}">
