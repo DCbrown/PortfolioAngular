@@ -219,6 +219,160 @@ export class DataService {
         instagram:'',
       },
     ]
+
+
+  this.courses = [
+    {
+      id:1,
+      img:'',
+      name:'Treehouse.com',
+      link:'https://teamtreehouse.com/',
+    },
+    {
+      id:2,
+      img:'',
+      name:'CodeCademy.com',
+      link:'https://codecademy.com/',
+    },
+    {
+      id:3,
+      img:'',
+      name:'Udemy.com',
+      link:'https://www.udemy.com/',
+    },
+    {
+      id:4,
+      img:'',
+      name:'TheOdinProject.com',
+      link:'https://www.theodinproject.com',
+    },
+    {
+      id:5,
+      img:'',
+      name:'TheOdinProject.com',
+      link:'https://www.theodinproject.com',
+    },
+    {
+      id:6,
+      img:'',
+      name:'UpSkillCourses.com',
+      link:'https://upskillcourses.com',
+    },
+    {
+      id:7,
+      img:'',
+      name:'Laracasts.com',
+      link:'https://laracasts.com',
+    }
+  ]
+
+  this.tools = [
+    {
+      id:1,
+      img:'',
+      name:'Visual Studio Code',
+      link:'https://code.visualstudio.com'
+    },
+    {
+      id:2,
+      img:'',
+      name:'XAMPP',
+      link:'https://www.apachefriends.org/index.html'
+    },
+    {
+      id:3,
+      img:'',
+      name:'Trello',
+      link:'https://trello.com/'
+    },
+    {
+      id:4,
+      img:'',
+      name:'Google',
+      link:'https://google.com/'
+    },
+    {
+      id:5,
+      img:'',
+      name:'Stack Overflow',
+      link:'https://stackoverflow.com'
+    },
+    {
+      id:6,
+      img:'',
+      name:'Opera',
+      link:'https://www.opera.com'
+    },
+    {
+      id:7,
+      img:'',
+      name:'Node.js',
+      link:'https://nodejs.org/'
+    },
+    {
+      id:8,
+      img:'',
+      name:'Angular CLI',
+      link:'https://cli.angular.io'
+    },
+    {
+      id:10,
+      img:'',
+      name:'Linux (Ubuntu)',
+      link:'https://www.ubuntu.com/'
+    },
+    {
+      id:11,
+      img:'',
+      name:'Android Studio',
+      link:'https://developer.android.com/studio/'
+    },
+    {
+      id:12,
+      img:'',
+      name:'Dart',
+      link:'https://www.dartlang.org/'
+    },
+    {
+      id:13,
+      img:'',
+      name:'Flutter',
+      link:'https://flutter.io/'
+    },
+    {
+      id:14,
+      img:'',
+      name:'GitHub',
+      link:'https://github.com/'
+    },
+    {
+      id:15,
+      img:'',
+      name:'Photoshop',
+      link:'https://www.adobe.com/products/photoshopfamily.html'
+    },
+    {
+      id:16,
+      img:'',
+      name:'Google Drive',
+      link:'https://www.google.com/drive/'
+    },
+    {
+      id:17,
+      img:'',
+      name:'Google Docs',
+      link:'https://www.google.com/docs/about/'
+    },
+    {
+      id:18,
+      img:'',
+      name:'Google Hangouts',
+      link:'https://hangouts.google.com/'
+    },
+
+
+  ]
+
   }
 
   getProjects(): Projects[]{
@@ -232,5 +386,11 @@ export class DataService {
   getPeople(): People[]{
     return this.people;
   }
+
+  getCourses(): Courses[]{
+    return this.courses
+  }
+
+
 
 }
